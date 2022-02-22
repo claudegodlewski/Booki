@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html>
+
+<!-- ### Base ### -->
+<head>
+
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css"> 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+<title>Booki</title>
+
+<!-- Icônes -->
+<script src="https://kit.fontawesome.com/ad0b43b818.js" crossorigin="anonymous"></script>
+
+</head>
+<!-- ### Base ### -->
+
+<body>
+ 
+<!-- ### En-tête ### -->
+  <header class="header">
+    <img class="booki" src="images/logo/Booki.png" alt="Booki" title="Booki"/>
+      <nav class="hebergementsActivites">
+        <a class="hebergementsActivitesLiens" href="#hosting">Hébergement</a>
+        <a class="hebergementsActivitesLiens" href="#activity">Activités</a>
+      </nav>
+  </header>
+<!-- ### En-tête ### -->
+
+<!-- ### Principal ### -->
+  <main class="main">
+
+    <!-- Titre / sous-titre -->
+    <section>
+        <div class="titre">
+          Trouvez votre hébergement pour des vacances de rêve
+        </div>
+        <p class="soustitre">
+          En plein centre de ville ou en pleine nature
+        </p>
+    <!-- Titre / sous-titre -->
+
+    <!-- Recherche -->
+      <form class="recherche" action="#" method="GET">
+
+        <!-- Icône / location -->
+        <span class="location">
+         <i class="fa-solid fa-location-dot"></i>
+        </span>
+        <!-- Icône / location -->
+
+        <input class="champ" type="search" placeholder="Marseille, France" size="1"/>
+        <button class="bouton">
+          <span class="searchFormSubmitinputText">Rechercher</span>
+          <i class="searchFormSubmitinputIcon fas fa-search"></i>
+        </button>
+      </form>
+      <div class="rechercherFiltres">
+        <h2 class="rechercherFiltresTitle">Filtres</h2>
+        <div class="rechercherFiltresFilter">
+          <div class="rechercherFiltresFilterWrapicon">
+            <i class="fas fa-money-bill-wave rechercherFiltresFilterWrapiconIcon"></i>
+          </div>
+          <span class="rechercherFiltresFilterTitle">Économique</span>
+        </div>
+        <div class="rechercherFiltresFilter">
+          <div class="rechercherFiltresFilterWrapicon">
+            <i class="fas fa-child rechercherFiltresFilterWrapiconIcon"></i>
+          </div>
+          <span class="rechercherFiltresFilterTitle">Familial</span>
+        </div>
+        <div class="rechercherFiltresFilter">
+          <div class="rechercherFiltresFilterWrapicon">
+            <i class="fas fa-heart rechercherFiltresFilterWrapiconIcon"></i>
+          </div>
+          <span class="rechercherFiltresFilterTitle">Romantique</span>
+        </div>
+        <div class="rechercherFiltresFilter">
+          <div class="rechercherFiltresFilterWrapicon">
+            <i class="fas fa-dog rechercherFiltresFilterWrapiconIcon"></i>
+          </div>
+          <span class="rechercherFiltresFilterTitle">Animaux autorisés</span>
+        </div>
+      </div>
+      <div class="searchResult">
+        <div class="searchResultWrapicon">
+          <i class="fas fa-info searchResultWrapiconIcon"></i>
+        </div>
+        <p class="searchResultText">
+          Plus de 500 logements sont disponibles dans cette ville
+        </p>
+      </div>
+    </section>
+    <!-- Recherche -->
+
+  </main>
+<!-- ### Principal ### -->
+
+</body>
+
+</html>
