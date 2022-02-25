@@ -166,17 +166,22 @@ input[type=search]:focus {
 }
 
 .conteneurInformations {
-    width: 31px;
+    width: 531px;
     height: 30px;
-    border: solid 2px var(--main-bg-color);
     display: flex;
     align-items: center;
-    justify-content: center;
-    border-radius: 50%;
+    justify-content: flex-start;
+
     margin-right: 15px;
-    font-size: 12px;
+    font-size: 14px;
 }
 
+.conteneurIcon{
+    border: solid 2px var(--main-bg-color);
+    margin-right: 12px;
+    border-radius: 100%;
+    width: 25px;
+}
 
 .fa-info {
     color: blue
