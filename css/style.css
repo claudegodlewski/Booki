@@ -1,510 +1,440 @@
-* {
-    box-sizing: border-box;
-}
-
-:root {
-    --main-bg-color: #F2F2F2;
-    --Blue-color: #0065FC;
-    --Blue-light: #DEEBFF;
-}
-
-body {
-    font-family: Raleway, Helvetica, sans-serif;
-}
-
-ul,
-a {
-    text-decoration: none;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-img {
-    width: 100%;
-    min-height: 100%;
-    max-width: 100%;
-    object-fit: cover;
-    object-position: center;
-}
-
-.page {
-    margin: 30px 60px 60px;
-}
-
-.navigationImage {
-    height: auto;
-    align-self: center;
-}
-
-.navigationImage img {
-    width: 40%;
-}
-
-.navigationBox {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.navigationListe {
-    display: inline-flex;
-    gap: 68px;
-    color: black;
-}
-
-.navigationListe a {
-    color: black;
-}
-
-.navigationListe a:hover {
-    border-top: solid 2px var(--Blue-color);
-    padding-top: 47px;
-    color: black;
-}
-
-.pageMain {
-    margin: 60px 30px;
-}
-
-.pageFormRecherche {
-    padding: 10px;
-}
-
-form h1 {
-    font-weight: bold;
-    font-size: 24px;
-}
-
-.form-search {
-    display: flex;
-}
-
-.fa-map-marker-alt {
-    background-color: var(--main-bg-color);
-    border-right: none;
-    padding: 12px 20px;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-}
-
-input[type=search] {
-    font-weight: bold;
-    color: black;
-    border: none;
-    border: solid 1px var(--main-bg-color);
-    padding: 11px 10px 10px;
-    width: 14em;
-
-}
-
-input[type=search]:focus {
-    outline: none !important;
-    border-color: var(--Blue-light);
-}
-
-.btn-submit-mobile {
-    background: var(--Blue-color);
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    border: none;
-    padding: 12px 10px 11px;
-    color: white;
-}
-
-.fa-search {
-    display: none;
-    color: black;
-}
-
-.boutonDeRecherche {
-    background: var(--Blue-color);
-    cursor: pointer;
-    border-radius: 15px;
-}
-
-.form-filtres-container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-top: 30px;
-}
-
-.filtre-texte {
-    font-weight: bold;
-    color: black;
-    margin-right: 20px;
-}
-
-.filtre-box {
-    border: solid 2px #F2F2F2;
-    border-radius: 50px;
-    font-weight: bold;
-    padding-right: 2%;
-    margin-right: 10px;
-}
-
-.fas-filtre {
-    padding: 12px;
-    border-radius: 50px;
-    background-color: #DEEBFF;
-    color: blue;
-}
-
-.filtre-box-2 i {
-    width: 40px;
-}
-
-.filtre-box:hover {
-    cursor: pointer;
-    color: black;
-}
-
-.filtre-box:hover i {
-    cursor: pointer;
-    color: grey;
-}
-
-.conteneurInformations {
-    width: 31px;
-    height: 30px;
-    border: solid 2px var(--main-bg-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    margin-right: 15px;
-    font-size: 12px;
-}
-
-
-.fa-info {
-    color: blue
-}
-
-.conteneurLogements {
-    display: flex;
-    margin-top: 50px;
-}
-
-.conteneurGauche {
-    flex: 70;
-    background-color: var(--main-bg-color);
-    border-radius: 30px;
-    padding: 0 20px;
-}
-
-.conteneurGauche > h2 {
-    margin-top: 50px;
-    margin-bottom: 30px;
-}
-
-.conteneurLogements .boxInformations {
-    height: 70px;
-}
-
-.conteneurGauche>h3 {
-    margin-bottom: 50px;
-}
-
-h3 a {
-    color: black;
-}
-
-.container-informations {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.box {
-    border-radius: 20px;
-    background-color: white;
-    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 20%);
-}
-
-.boxGauche {
-    flex: 1 0 160px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    height: 200px;
-    padding: 5px;
-}
-
-.box a {
-    color: black;
-}
-
-.boxInformations {
-    display: flex;
-    flex-direction: column;
-    padding: 0 10px;
-    height: 70px;
-}
-
-.boxImage {
-    height: 60%;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-}
-
-.boxInformations>h4 {
-    margin: 0;
-    margin: 8px 0 4px 0;
-    font-size: 15px;
-}
-
-.boxInformations>p {
-    margin: 0;
-}
-
-.box-etoiles {
-    display: flex;
-    font-size: 12px;
-    height: 60%;
-    align-items: flex-end;
-}
-
-.etoile-bleue {
-    color: var(--Blue-color);
-}
-
-.etoile-gris {
-    color: #d1d1d1;
-}
-
-.container-droit {
-    flex: 30;
-    margin-left: 30px;
-    background-color: var(--main-bg-color);
-    padding: 0 20px;
-    border-radius: 30px;
-}
-
-.fa-chart-line {
-    color: black;
-}
-
-.lien-externe {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 50px;
-    margin-bottom: 30px;
-}
-
-.lien-externe>h2 {
-    margin: 0;
-}
-
-.box-aside {
-    display: flex;
-    margin-bottom: 20px;
-    height: 135px;
-    padding: 5px;
-}
-
-.container-box a {
-    color: black;
-}
-
-aside .boxImage {
-    width: 40%;
-    height: auto;
-}
-
-aside .box .boxInformations {
-    width: 70%;
-    height: auto;
-}
-
-.image-aside {
-    width: 100%;
-    height: 60%;
-    border-radius: 20px 0 0 20px;
-}
-
-.boxInformations-aside > h4 {
-    margin-bottom: 0;
-    margin-top: 10px;
-}
-
-.boxInformations-aside > p {
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
-.activites {
-    margin-top: 60px;
-    margin-bottom: 50px;
-}
-
-.containerActivitesFlex {
-    height: 380px;
-    display: flex;
-}
-
-.container-activites-informations {
-    margin: 0 30px;
-}
-
-.container-activites-informations>a {
-    color: black;
-}
-
-.boxImage-activités {
-    width: 100%;
-    height: 80%;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-}
-
-.container-column {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.informations-column>a {
-    color: black;
-}
-
-.informations-1 {
-    margin-left: 0;
-    width: 23%;
-}
-
-.informations-2 {
-    height: 50%;
-}
-
-.informations-3 {
-    height: 40%;
-}
-
-.informations-4 {
-    width: 23%;
-}
-
-.informations-5 {
-    height: 40%;
-}
-
-.informations-6 {
-    height: 50%;
-}
-
-.container-image {
-    height: 90%;
-    border-radius: 20px 20px 0 0;
-}
-
-.container-texte-column {
-    padding-left: 20px;
-    display: flex;
-    height: 20%;
-    align-items: center;
-}
-
-.boxImage-activités-1 {
-    height: 75%;
-}
-
-.container-texte {
-    padding-left: 20px;
-    border-radius: 0 0 30px 30px;
-    display: flex;
-    height: 10%;
-    align-items: center;
-}
-
-.page-footer {
-    background-color: var(--main-bg-color);
-    width: 100%;
-}
-
-.container-col-footer {
-    display: flex;
-    padding: 50px 90px;
-}
-
-.col-footer {
-    flex: 1;
-}
-
-.footer-li {
-    margin: 15px 0;
-}
-
-.footer-li a {
-    color: black;
-}
-
-@media (min-width: 1142px) {
-    .pageFormRecherche {
-        padding: 10px;
-        width: 70%;
-    }
-    .boxGauche {
-        flex: 1 0 200px;
-    }
-}
-
-@media (min-width: 1370px) {
-    body {
-        font-size: 18px;
-    }
-    .boxInformations>h4 {
-        margin: 8px 0px 4px;
-        font-size: 20px;
-    }
-    .pageFormRecherche {
-        padding: 10px;
-        width: 60%;
-    }
-    .boxGauche {
-        flex: 1 0 266px;
-        height: 250px;
-    }
-    .containerActivitesFlex {
-        height: 500px;
-        display: flex;
-    }
-    .boxInformations {
-        height: 89px;
-    }
-    .box-aside {
-        height: 160px;
-    }
-}
-
-@media (min-width: 1626px) {
-    .pageMain {
-        margin: 60px 60px;
-    }
-    body {
-        font-size: 25px;
-    }
-    .box-aside {
-        height: 160px;
-    }
-    .containerActivitesFlex {
-        height: 600px;
-        display: flex;
-    }
-}
-
-@media (min-width: 1822px) {
-    .pageMain {
-        margin: 60px 90px;
-    }
-    body {
-        font-size: 22px;
-    }
-    .box-aside {
-        height: 170px;
-    }
-    .boxGauche {
-        flex: 1 0 310px;
-    }
-}
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <script src="https://kit.fontawesome.com/78c12ea33f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Booki</title>
+</head>
+
+<body>
+    
+    <header class="page page-header">
+        <nav class="navigationBox">
+            <a href="#" class="navigation-logo">
+                <div class="navigationImage">
+                    <img src="./images/logo/Booki@3x.png" alt="Logo du site Booki">
+                </div>
+            </a>
+            <ul class="navigationListe">
+                <li>
+                    <a href="#hébergements">Hébergements</a>
+                </li>
+                <li>
+                    <a href="#activites">Activités</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page pageMain">
+
+        <form action="formulaire" class="pageFormRecherche">
+            <h1 class="formulaire-recherche-texte">Trouver votre hébergement pour des vacances de rêve</h1>
+            <p>En plein centre ville ou en pleine nature</p>
+            <div class="form-search">
+                <i class="fas fa-map-marker-alt"></i><label for="location" class="label-input"><input type="search" id="location" name="search" placeholder="Marseille, France" size="1"></label><button value="Rechercher"
+                    type="submit" class="btn-submit-mobile"><!----><span class="boutonDeRecherche">Rechercher</span><!----><i class="fas fa-search"></i><!----></button>
+            </div>
+            <div class="form-filtres-container">
+                <p class="filtre-texte">
+                    Filtres
+                </p>
+                <span class="filtre-box filtre-box-1"><i class="fas fas-filtre fa-money-bill-wave"></i> Economique </span>
+                <span class="filtre-box filtre-box-2"><i class="fas fas-filtre fa-child"></i> Familial </span>
+                <span class="filtre-box filtre-box-3"><i class="fas fas-filtre fa-heart"></i> Romantique </span>
+                <span class="filtre-box filtre-box-4"><i class="fas fas-filtre fa-dog"></i> Animaux autorisés </span>
+            </div>
+            <div class="info-en-plus">
+                <div class="conteneurInformations">
+                    <i class="fas fa-info"></i>
+                </div>
+                <p>Plus de 500 logements sont disponibles dans cette ville</p>
+            </div>
+        </form>
+
+        <section id="hébergements" class="conteneurLogements">
+            <div class="conteneurGauche">
+                <h2>Hébergements à Marseille</h2>
+                <div class="container-informations">
+
+                    <div class="box boxGauche box1">
+                        <a href="#">
+                            <div class="boxImage">
+                                <img class="boxImage" srcset="
+                                ./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg 750w,
+                                ./images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg 1500w,
+                                ./images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg 3000w,
+                                ./images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg 6000w" sizes="(max-width:767px) 100vw, (min-width: 768px) and (max-width : 992px) 50vw, (min-width: 993px) 25vw" src="./images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                                    alt="marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+                            </div>
+                            <div class="boxInformations">
+                                <h4>Auberge la cannebière</h4>
+                                <p>Nuit à partir de <strong>25€</strong></p>
+                                <div class="box-etoiles">
+                                    <span class="etoile-bleue"><i class="fas fa-star"></i></span>
+                                    <span class="etoile-bleue"><i class="fas fa-star"></i></span>
+                                    <span class="etoile-bleue"><i class="fas fa-star"></i></span>
+                                    <span class="etoile-bleue"><i class="fas fa-star"></i></span>
+                                    <span class="etoile-gris"><i class="fas fa-star"></i></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="box boxGauche box2">
+                        <a href="#">
+                            <div class="boxImage">
+                                <img class=" boxImage" srcset="
+                                ./images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg 750w,
+                                ./images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg 1500w,
+                                ./images/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg 3000w,
+                                ./images/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg 6000w" sizes="(max-width:767px) 100vw, (min-width: 768px) and (max-width : 992px) 50vw, (min-width: 993px) 25vw" src="./images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg "
+                                    alt="fred-kleber-gTbaxaVLvsg-unsplash.jpg ">
+                            </div>
+                            <div class="boxInformations ">
+                                <h4>Hôtel du port</h4>
+                                <p>Nuit à partir de <strong>52€</strong></p>
+                                <div class="box-etoiles ">
+                                    <span class="etoile-bleue "><i class="fas fa-star "></i></span>
+                                    <span class="etoile-bleue "><i class="fas fa-star "></i></span>
+                                    <span class="etoile-bleue "><i class="fas fa-star "></i></span>
+                                    <span class="etoile-bleue "><i class="fas fa-star "></i></span>
+                                    <span class="etoile-bleue "><i class="fas fa-star "></i></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="box boxGauche box3 ">
+                        <a href="# ">
+                            <div class="boxImage ">
+                                <img class=" boxImage " srcset="
+                                ./images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg 750w,
+                                ./images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg 1500w,
+                                ./images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg 3000w,
+                                ./images/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg 6000w" sizes="(max-width:767px) 100vw, (min-width: 768px) and (max-width : 992px) 50vw, (min-width: 993px) 25vw" src="./images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg "
+                                    alt="reisetopia-B8WIgxA_PFU-unsplash.jpgfred-kleber-gTbaxaVLvsg-unsplash.jpg ">
+                            </div>
+                            <div class="boxInformations ">
+                                <h4>Hôtel les mouettes</h4>
+                                <p>Nuit à partir de <strong>76€</strong></p>
+                                <div class="box-etoiles ">
+                                    <span class="etoile-bleue "><i class="fas fa-star "></i></span>
+                                    <span class="etoile-bleue "><i class="fas fa-star "></i></span>
+                                    <span class="etoile-bleue "><i class="fas fa-star "></i></span>
+                                    <span class="etoile-bleue "><i class="fas fa-star "></i></span>
+                                    <span class="etoile-gris "><i class="fas fa-star "></i></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="box boxGauche box4 ">
+                        <a href="# ">
+                            <div class="boxImage ">
+                                <img class=" boxImage" srcset="
+                                ./images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg 750w,
+                                ./images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg 1500w,
+                                ./images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg 3000w,
+                                ./images/hebergements/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg 6000w" sizes="(max-width:767px) 100vw, (min-width: 768px) and (max-width : 992px) 50vw, (min-width: 993px) 25vw" src="./images/hebergements//3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg "
+                                    alt="annie-spratt-Eg1qcIitAuA-unsplash.jpg ">
+                            </div>
+                            <div class="boxInformations ">
+                                <h4>Hôtel de la mer</h4>
+                                <p>Nuit à partir de <strong>46€</strong></p>
+                                <div class="box-etoiles ">
+                                    <span class="etoile-bleue "><i class="fas fa-star "></i></span>
+                                    <span class="etoile-bleue "><i class="fas fa-star "></i></span>
+                                    <span class="etoile-bleue "><i class="fas fa-star "></i></span>
+                                    <span class="etoile-gris "><i class="fas fa-star "></i></span>
+                                    <span class="etoile-gris "><i class="fas fa-star "></i></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="box boxGauche box5 ">
+                        <a href="# ">
+                            <div class="boxImage ">
+                                <img class="boxImage " srcset="
+                                ./images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg 750w,
+                                ./images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg 1500w,
+                                ./images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg 3000w,
+                                ./images/hebergements/1_xlarge/nicate-lee-kT-ZyaiwBe0-unsplash.jpg 6000w" sizes="(max-width:767px) 100vw, (min-width: 768px) and (max-width : 992px) 50vw, (min-width: 993px) 25vw" src="./images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg "
+                                    alt="nicate-lee-kT-ZyaiwBe0-unsplash.jpg ">
+                            </div>
+                            <div class="boxInformations ">
+                                <h4>Auberge Le panier</h4>
+                                <p>Nuit à partir de <strong>23€</strong></p>
+                                <div class="box-etoiles ">
+                                    <span class="etoile-bleue "><i class="fas fa-star "></i></span>
+                                    <span class="etoile-bleue "><i class="fas fa-star "></i></span>
+                                    <span class="etoile-bleue "><i class="fas fa-star "></i></span>
+                                    <span class="etoile-bleue "><i class="fas fa-star "></i></span>
+                                    <span class="etoile-gris "><i class="fas fa-star "></i></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="box boxGauche box6 ">
+                        <a href="# ">
+                            <div class="boxImage boxImage-6 ">
+                                <img class=" boxImage boxImage-6 " srcset="
+                                ./images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg 750w,
+                                ./images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg 1500w,
+                                ./images/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg 3000w,
+                                ./images/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg 6000w" sizes="(max-width:767px) 100vw, (min-width: 768px) and (max-width : 992px) 50vw, (min-width: 993px) 25vw" src="./images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg "
+                                    alt="febrian-zakaria-M6S1WvfW68A-unsplash.jpg ">
+                            </div>
+                            <div class="boxInformations ">
+                                <h4>Hôtel chez anima</h4>
+                                <p>Nuit à partir de <strong>23€</strong></p>
+                                <div class="box-etoiles ">
+                                    <span class="etoile-bleue "><i class="fas fa-star "></i></span>
+                                    <span class="etoile-bleue "><i class="fas fa-star "></i></span>
+                                    <span class="etoile-bleue "><i class="fas fa-star "></i></span>
+                                    <span class="etoile-bleue "><i class="fas fa-star "></i></span>
+                                    <span class="etoile-gris "><i class="fas fa-star "></i></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <h3><a href="# ">Afficher plus</a></h3>
+            </div>
+
+            <aside class="container-droit ">
+                <div class="lien-externe ">
+                    <h2>Les plus populaires</h2>
+                    <a href="# "><span><i class="fas fa-chart-line "></i></span></a>
+                </div>
+                <div class="container-informations-aside ">
+
+                    <div class="box container-box-aside ">
+                        <a href=" ">
+                            <div class="box-aside ">
+                                <div class="boxImage">
+                                    <img class="image-aside " srcset="
+                                ./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg 750w,
+                                ./images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg 1500w,
+                                ./images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg 3000w,
+                                ./images/hebergements/1_xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg 6000w" sizes="(max-width:767px) 33.33vw, (min-width: 768px) and (max-width : 992px) 33.33vw, (min-width: 993px) 33.33vw" src="./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg "
+                                        alt="emile-guillemot-Bj_rcSC5XfE-unsplash.jpg ">
+                                </div>
+                                <div class="boxInformations">
+                                    <h4>Hôtel Le soleil du matin</h4>
+                                    <p>Nuit à partir de <strong>128€</strong>
+                                    </p>
+                                    <div class="box-etoiles box-etoiles-aside ">
+                                        <span class="etoile-bleue "><i class="fas fa-star "></i></span>
+                                        <span class="etoile-bleue "><i class="fas fa-star "></i></span>
+                                        <span class="etoile-bleue "><i class="fas fa-star "></i></span>
+                                        <span class="etoile-bleue "><i class="fas fa-star "></i></span>
+                                        <span class="etoile-gris "><i class="fas fa-star "></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="box container-box-aside ">
+                        <a href=" ">
+                            <div class="box-aside ">
+                                <div class="boxImage">
+                                    <img class="image-aside " srcset="
+                                ./images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg 750w,
+                                ./images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg 1500w,
+                                ./images/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg 3000w,
+                                ./images/hebergements/1_xlarge/aw-creative-VGs8z60yT2c-unsplash.jpg 6000w" sizes="(max-width:767px) 33.33vw, (min-width: 768px) and (max-width : 992px) 33.33vw, (min-width: 993px) 33.33vw" src="./images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
+                                        alt="aw-creative-VGs8z60yT2c-unsplash.jpg ">
+                                </div>
+                                <div class="boxInformations">
+                                    <h4>Au coeur de l'eau Chambre d'hôtes</h4>
+                                    <p>Nuit à partir de <strong>71€</strong></p>
+                                    <div class="box-etoiles box-etoiles-aside ">
+                                        <span class="etoile-bleue "><i class="fas fa-star "></i></span>
+                                        <span class="etoile-bleue "><i class="fas fa-star "></i></span>
+                                        <span class="etoile-bleue "><i class="fas fa-star "></i></span>
+                                        <span class="etoile-bleue "><i class="fas fa-star "></i></span>
+                                        <span class="etoile-gris "><i class="fas fa-star "></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div class="box container-box-aside ">
+                        <a href="# ">
+                            <div class="box-aside ">
+                                <div class="boxImage ">
+                                    <img class="image-aside " srcset="
+                                ./images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg 750w,
+                                ./images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg 1500w,
+                                ./images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg 3000w,
+                                ./images/hebergements/1_xlarge/febrian-zakaria-sjvU0THccQA-unsplash.jpg 6000w" sizes="(max-width:767px) 33.33vw, (min-width: 768px) and (max-width : 992px) 25vw, (min-width: 993px) 33.33vw" src="./images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg "
+                                        alt="febrian-zakaria-sjvU0THccQA-unsplash.jpg ">
+                                </div>
+                                <div class="boxInformations">
+                                    <h4>Hôtel Tout bleu et blanc</h4>
+                                    <p>Nuit à partir de <strong>68€</strong>
+                                    </p>
+                                    <div class="box-etoiles box-etoiles-aside ">
+                                        <span class="etoile-bleue "><i class="fas fa-star "></i></span>
+                                        <span class="etoile-bleue "><i class="fas fa-star "></i></span>
+                                        <span class="etoile-bleue "><i class="fas fa-star "></i></span>
+                                        <span class="etoile-bleue "><i class="fas fa-star "></i></span>
+                                        <span class="etoile-gris "><i class="fas fa-star "></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </aside>
+        </section>
+
+        <section id="activites" class="activites">
+            <h2>Activités à Marseille</h2>
+            <div class="containerActivitesFlex ">
+                <div class="box container-activites-informations informations-1 ">
+                    <a href="# ">
+                        <div class="container-image">
+                            <img class="boxImage container-image-1 " srcset="
+                                ./images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg 750w,
+                                ./images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg 1500w,
+                                ./images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg 3000w,
+                                ./images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg 6000w" sizes="(max-width:767px) 100vw, (min-width: 768px) and (max-width : 992px) 25vw, (min-width: 993px) 25vw" src="./images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg "
+                                alt="reno-laithienne-QUgJhdY5Fyk-unsplash.jpg ">
+                        </div>
+                        <div class="container-texte ">
+                            <h4>Vieux port</h4>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="container-column ">
+                    <div class="box informations-2 ">
+                        <a href="# ">
+                            <div class="boxImage-activités ">
+                                <img class="boxImage " srcset="
+                                ./images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg 750w,
+                                ./images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg 1500w,
+                                ./images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg 3000w,
+                                ./images/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg 6000w" sizes="(max-width:767px) 100vw, (min-width: 768px) and (max-width : 992px) 25vw, (min-width: 993px) 25vw" src="./images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg "
+                                    alt="paul-hermann-QFTrLdQIRhI-unsplash.jpg ">
+                            </div>
+                            <div class="container-texte-column ">
+                                <h4>Fort de Pomègues</h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="box informations-3 ">
+                        <a href="# ">
+                            <div class="boxImage-activités boxImage-activités-1 ">
+                                <img class="boxImage " srcset="
+                                ./images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg 750w,
+                                ./images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg 1500w,
+                                ./images/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg 3000w,
+                                ./images/activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg 6000w" sizes="(max-width:767px) 100vw, (min-width: 768px) and (max-width : 992px) 25vw, (min-width: 993px) 25vw" src="./images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg "
+                                    alt="kevin-hikari-rV_Qd1l-VXg-unsplash.jpg ">
+                            </div>
+                            <div class="container-texte-column ">
+                                <h4>Îles du Frioul</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="box container-activites-informations informations-4 ">
+                    <a href="# ">
+                        <div class="container-image container-image-2 ">
+                            <img class="boxImage container-image-2 " srcset="
+                                ./images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg 750w,
+                                ./images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg 1500w,
+                                ./images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg 3000w,
+                                ./images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg 6000w" sizes="(max-width:767px) 100vw, (min-width: 768px) and (max-width : 992px) 25vw, (min-width: 993px) 25vw" src="./images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg "
+                                alt="kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg ">
+
+                        </div>
+                        <div class="container-texte ">
+                            <h4>Parc National des Calanques</h4>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="container-column ">
+                    <div class="box informations-5 ">
+                        <a href="# ">
+                            <div class="boxImage-activités ">
+                                <img class=" boxImage boxImage-1 " srcset="
+                                ./images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg 750w,
+                                ./images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg 1500w,
+                                ./images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg 3000w,
+                                ./images/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg 6000w" sizes="(max-width:767px) 100vw, (min-width: 768px) and (max-width : 992px) 25vw, (min-width: 993px) 25vw" src="./images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg "
+                                    alt="florian-wehde-xW9e8gdotxI-unsplash.jpg ">
+                            </div>
+                            <div class="container-texte-column ">
+                                <h4>Notre-dame-de-la-garde</h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="box informations-6 ">
+                        <a href="# ">
+                            <div class="boxImage-activités ">
+                                <img class=" boxImage boxImage-1 " srcset="
+                                ./images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg 750w,
+                                ./images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg 1500w,
+                                ./images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg 3000w,
+                                ./images/activites/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash.jpg 6000w" sizes="(max-width:767px) 100vw, (min-width: 768px) and (max-width : 992px) 25vw, (min-width: 993px) 25vw" src="./images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg "
+                                    alt="lena-paulin-wH2-EJoDcV0-unsplash.jpg ">
+                            </div>
+                            <div class="container-texte-column ">
+                                <h4>Parc Longchamp</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer class="page-footer ">
+        <div class="container-col-footer ">
+            <div class="col-footer ">
+                <h3><a href="# ">A propos</a></h3>
+                <ul class="footer-ul ">
+                    <li class="footer-li "><a href="# ">Fonctionnement du site</a></li>
+                    <li class="footer-li "><a href="# ">Conditions générales de vente</a></li>
+                    <li class="footer-li "><a href="# ">Données et confidentialité</a></li>
+                </ul>
+            </div>
+            <div class="col-footer ">
+                <h3><a href="# ">Nos hébergements</a></h3>
+                <ul class="footer-ul ">
+                    <li class="footer-li "><a href="# ">Charte et qualité</a></li>
+                    <li class="footer-li "><a href="# ">Soumettre votre hôtel</a></li>
+                </ul>
+            </div>
+            <div class="col-footer ">
+                <h3><a href="# ">Assistance</a></h3>
+                <ul class="footer-ul ">
+                    <li class="footer-li "><a href="# ">Centre d'aide</a></li>
+                    <li class="footer-li "><a href="# ">Nous contacter</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
