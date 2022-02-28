@@ -84,7 +84,7 @@ a {
     }
     .filtresBase:hover {
         cursor: grab;
-        color: hsla(216, 100%, 49%, 0.377);
+        color: black;
     }
     .filtresIcones {
         background-color: #DEEBFF;
@@ -256,7 +256,7 @@ a {
         padding-left: 20px;
         border-radius: 0 0 30px 30px;
     }
-    .page-footer {
+    .piedDePage {
         background-color: #F2F2F2;
         width: 100%;
     }
