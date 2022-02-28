@@ -1,0 +1,303 @@
+@media (max-width: 767px) {
+    .headerSemantique {
+        margin: 10px 0;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    .navigationLogo {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    .navigationLogo img {
+        width: 50%;
+    }
+    .navigation {
+        display: flex;
+        flex-direction: column;
+    }
+    .hebergementsActivites {
+        padding: 0;
+        gap: 0;
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .hebergementsActivites li {
+        padding-bottom: 10px;
+        width: 100%;
+        text-align: center;
+    }
+    .hebergementsActivites a:hover {
+        border-top: none;
+        padding-top: 0;
+    }
+    .hebergementsActivites li:nth-of-type(1) a {
+        border-top: none;
+        padding: 0;
+        color: #0065FC;
+    }
+    .hebergementsActivites li {
+        border-top: none;
+        border-bottom: solid 3px #F2F2F2;
+    }
+    .hebergementsActivites li:nth-of-type(1):hover {
+        border-top: none;
+        border-bottom: solid 3px #0065FC;
+    }
+    .hebergementsActivites li:nth-of-type(2):hover {
+        border-top: none;
+        border-bottom: solid 3px #0065FC;
+    }
+    .base {
+        margin: 0;
+    }
+    .principal {
+        margin-top: 20px;
+    }
+    .formulaireRecherche {
+        padding: 0;
+        margin-top: 30px;
+    }
+    form {
+        margin: 20px;
+    }
+    form h1 {
+        font-weight: bold;
+        font-size: 20px;
+        margin: 0;
+    }
+    form p {
+        font-weight: 400;
+    }
+    .formulaireConteneur {
+        display: flex;
+        align-content: center;
+    }
+    .label-input {
+        width: 100%;
+    }
+    input[type=search] {
+        width: 100%;
+    }
+    input[type=search]:focus {
+        outline: none !important;
+        border-color: #719ECE;
+        border-left: none;
+    }
+    .boutonRecherche {
+        background-color: blue;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        border: none;
+        padding: 12px 10px 11px;
+        color: white;
+    }
+    .btn-recherche {
+        display: none;
+        background: #0065FC;
+        cursor: pointer;
+        border-radius: 15px;
+    }
+    .filtresConteneur {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 20px;
+    }
+    .filtreTexte {
+        font-weight: bold;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .filtresBase:hover {
+        cursor: grab;
+        color: hsla(216, 100%, 49%, 0.377);
+    }
+    .filtresBase {
+        padding-right: 10px;
+        margin-top: 10px;
+        margin-right: 15px;
+    }
+    .filtresIcones {
+        border-radius: 50px;
+    }
+    .informationsConteneur {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+    }
+    .fa-info-circle {
+        margin-right: 10px;
+        color: #0065FC;
+    }
+    .articlesConteneur1 {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 10px;
+    }
+    .gaucheConteneur {
+        background-color: white;
+        border-radius: 30px;
+        width: 100%;
+    }
+    .articlesGauche {
+        margin-bottom: 20px;
+        height: 200px;
+        margin-right: 0px;
+    }
+    .gaucheConteneur > h2 {
+        padding: 0;
+    }
+    .gaucheConteneur > h3 {
+        padding-left: 0;
+        margin-bottom: 30px;
+    }
+    .articlesConteneur2 {
+        display: flex;
+        padding: 0;
+        flex-direction: column;
+    }
+    h3 a {
+        color: black;
+    }
+    .articlesBase a {
+        color: black;
+    }
+    .articlesImages {
+        height: 60%;
+    }
+    .articlesInformations {
+        height: 80px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    .articlesInformations {
+        padding: 0 15px;
+    }
+    .articlesInformations > h4 {
+        margin: 0;
+        margin: 10px 0 5px 0;
+    }
+    .articlesInformations > p {
+        margin: 0;
+    }
+    .box-etoiles {
+        font-size: 12px;
+        margin-top: 3px;
+    }
+    .etoile-bleue {
+        color: #0065FC;
+    }
+    .etoile-gris {
+        color: #d1d1d1;
+    }
+    .droiteConteneur {
+        background-color: #F2F2F2;
+        margin: 0;
+        border-radius: 0;
+    }
+    .lienExterneConteneur {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+    .lienExterneConteneur > h2 {
+        margin: 0;
+    }
+    .container-box a {
+        color: black;
+    }
+    .box-image-aside {
+        width: 30%;
+        height: 100%;
+        border-bottom-left-radius: 30px;
+        border-top-left-radius: 30px;
+    }
+    .asideImages {
+        width: 100%;
+        height: 60%;
+    }
+    .box-informations-aside {
+        width: 70%;
+        height: 100%;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+        padding: 0 20px;
+    }
+    .box-informations-aside > h4 {
+        margin-bottom: 0;
+    }
+    .box-informations-aside > p {
+        margin-top: 10px;
+    }
+    .box-etoiles-aside {
+        display: flex;
+        align-items: flex-end;
+    }
+    .activitesConteneur1 {
+        margin: 0 20px;
+    }
+    .activitesConteneur1 h2 {
+        margin-bottom: 0;
+    }
+    .activitesConteneur2 {
+        flex-direction: column;
+        height: auto;
+    }
+    .texteConteneur {
+        height: 30%;
+    }
+    .activitesConteneur3 {
+        width: 100%;
+        height: 200px;
+        margin: 0;
+        margin: 30px 0;
+    }
+    .activitesConteneur4 {
+        height: 140px;
+    }
+    .ilesDuFrioul {
+        margin: 30px 0 0 0;
+    }
+    .parcLongChamp {
+        margin: 30px 0 30px 0;
+    }
+    .imagesVerticalesConteneur {
+        height: 70%;
+        border-radius: 30px 30px 0 0;
+    }
+    .page-footer {
+        background-color: #F2F2F2;
+        width: 100%;
+    }
+    .container-col-footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 30px 30px;
+    }
+    .col-footer {
+        flex: 1;
+    }
+    .footer-li {
+        margin: 15px 0;
+    }
+    .footer-li a {
+        color: black;
+    }
+    .col-footer h3 a {
+        color: black;
+    }
+    @media (max-width: 477px) {
+        .informationsConteneur2 {
+            width: 34px;
+        }
+    }
+}
