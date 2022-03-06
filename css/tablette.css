@@ -7,8 +7,7 @@ body {
     font-size: 100%;
 }
 
-ul,
-a {
+ul, a {
     text-decoration: none;
     list-style-type: none;
     margin: 0;
@@ -16,16 +15,16 @@ a {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-    .headerSemantique {
+    .header {
         margin: 20px 20px 0;
     }
-    .navigationLogo img {
-        width: 50%;
-    }
-    .navigation {
+    .nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+    .logo img {
+        width: 50%;
     }
     .hebergementsActivites {
         display: inline-flex;
@@ -43,13 +42,13 @@ a {
         border-top: none;
         ;
     }
-    .principal {
+    .main {
         margin: 0px 10px;
     }
-    .formulaireRecherche h1 {
+    .form h1 {
         font-weight: bold;
     }
-    .formulaireRecherche p {
+    .form p {
         margin-right: 30px;
     }
     input {
@@ -90,7 +89,7 @@ a {
         background-color: #DEEBFF;
         color: #0065FC;
     }
-    .articlesConteneur1 {
+    .hebergementsConteneur {
         display: flex;
         flex-direction: column-reverse;
         margin: 0;
@@ -101,22 +100,22 @@ a {
         border-radius: 30px;
         width: 100%;
     }
-    .gaucheConteneur>h2 {
+    .gaucheConteneur > h2 {
         margin-top: 50px;
         margin-bottom: 20px;
         padding-left: 20px;
     }
-    .gaucheConteneur>h3 {
+    .gaucheConteneur > h3 {
         padding-left: 30px;
         margin-bottom: 50px;
     }
-    .articlesConteneur2 {
+    .articlesConteneur1 {
         display: flex;
         flex-wrap: wrap;
         margin: 0 10px;
         padding: 0;
     }
-    .articlesGauche {
+    .articleHebergement {
         flex: 1 1 40%;
         height: 250px;
     }
@@ -124,13 +123,6 @@ a {
         height: 80px;
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
-    }
-    .droiteConteneur {
-        margin: 0;
-        margin-top: 20px;
-        background-color: #F2F2F2;
-        padding: 0 20px;
-        border-radius: 30px;
     }
     .articlesInformations {
         padding: 0 15px;
@@ -142,39 +134,33 @@ a {
     .articlesInformations > p {
         margin: 0;
     }
-    .etoile-bleue {
+    .articlesEtoilesBleu {
         color: #0065FC;
     }
-    .etoile-gris {
+    .articlesEtoilesGris {
         color: #d1d1d1;
     }
-    .asideConteneur2 {
+    .populairesConteneur {
+        margin: 0;
+        margin-top: 20px;
+        background-color: #F2F2F2;
+        padding: 0 20px;
+        border-radius: 30px;
+    }
+    .asideConteneur {
         display: flex;
         flex: 200px;
         margin: 0;
         height: 185px;
     }
-    .container-box {
-        margin-right: 20px;
-    }
-    .container-box:nth-of-type(3) {
-        margin-right: 0;
-    }
-    .container-box a {
-        color: black;
-    }
-    .box-image-aside {
-        width: 30%;
-        height: 100%;
-    }
-    .populaireConteneur {
+    .droiteConteneur {
         display: flex;
         flex-direction: column;
         margin: 0;
         margin-bottom: 30px;
         row-gap: 20px;
     }
-    .asideConteneur1:nth-of-type(3) {
+    .articlePopulaire:nth-of-type(3) {
         margin-right: 0;
     }
     .articlesInformations-aside > h4 {
@@ -183,21 +169,21 @@ a {
     .articlesInformations-aside > p {
         margin-top: 5px;
     }
-    .activitesConteneur1 {
+    .activitesConteneur {
         margin-top: 60px;
         margin-bottom: 50px;
         padding: 0 20px;
     }
-    .activitesConteneur2 {
+    .basConteneur {
         height: auto;
         display: flex;
         flex-wrap: wrap;
     }
-    .activitesConteneur3 > a {
+    .activitesConteneur1 > a {
         color: black;
         margin: 0;
     }
-    .activitesConteneur4 {
+    .activitesConteneur2 {
         width: 100%;
         height: 80%;
         border-top-left-radius: 20px;
@@ -208,13 +194,6 @@ a {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-    }
-    .informations-column {
-        border-radius: 20px;
-        box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 20%);
-    }
-    .informations-column>a {
-        color: black;
     }
     .vieuxPort {
         width: 50%;
@@ -256,24 +235,24 @@ a {
         padding-left: 20px;
         border-radius: 0 0 30px 30px;
     }
-    .piedDePage {
+    .aPropos {
         background-color: #F2F2F2;
         width: 100%;
     }
-    .container-col-footer {
+    .piedDePageConteneur {
         display: flex;
         padding: 50px 90px;
     }
-    .col-footer {
+    .titresConteneur {
         flex: 1;
     }
-    .footer-li {
+    .footerListe {
         margin: 15px 0;
     }
-    .footer-li a {
+    .footerListe a {
         color: black;
     }
-    .col-footer h3 a {
+    .titresConteneur h3 a {
         color: black;
     }
 }
