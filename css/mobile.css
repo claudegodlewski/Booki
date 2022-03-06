@@ -1,22 +1,29 @@
 @media (max-width: 767px) {
-    .headerSemantique {
-        margin: 10px 0;
-    }
     img {
         max-width: 100%;
         height: auto;
     }
-    .navigationLogo {
+    h3 a {
+        color: black;
+    }
+    .base {
+        margin: auto;
+        width: 100%;
+    }
+    .header {
+        margin: 10px 0;
+    }
+    .nav {
+        display: flex;
+        flex-direction: column;
+    }
+    .logo {
         display: flex;
         justify-content: center;
         margin-bottom: 10px;
     }
-    .navigationLogo img {
+    .logo img {
         width: 50%;
-    }
-    .navigation {
-        display: flex;
-        flex-direction: column;
     }
     .hebergementsActivites {
         padding: 0;
@@ -52,13 +59,10 @@
         border-top: none;
         border-bottom: solid 3px #0065FC;
     }
-    .base {
-        margin: 0;
-    }
-    .principal {
+    .main {
         margin-top: 20px;
     }
-    .formulaireRecherche {
+    .form {
         padding: 0;
         margin-top: 30px;
     }
@@ -77,7 +81,7 @@
         display: flex;
         align-content: center;
     }
-    .label-input {
+    .labelInput {
         width: 100%;
     }
     input[type=search] {
@@ -88,19 +92,21 @@
         border-color: #719ECE;
         border-left: none;
     }
-    .boutonRecherche {
-        background-color: blue;
-        border-top-right-radius: 15px;
-        border-bottom-right-radius: 15px;
-        border: none;
-        padding: 12px 10px 11px;
-        color: white;
+    .boutonRecherche1 {
+        background: #0065FC;
+        border-radius: 15px;
+        padding: 0 15px;
+        margin-left: -10px;
     }
-    .btn-recherche {
+    .boutonRecherche2 {
         display: none;
         background: #0065FC;
         cursor: pointer;
         border-radius: 15px;
+    }
+    .fa-search {
+        display: block;
+        color: white;
     }
     .filtresConteneur {
         display: flex;
@@ -135,7 +141,7 @@
         margin-right: 10px;
         color: #0065FC;
     }
-    .articlesConteneur1 {
+    .hebergementsConteneur {
         display: flex;
         flex-direction: column-reverse;
         margin-top: 10px;
@@ -145,11 +151,6 @@
         border-radius: 30px;
         width: 100%;
     }
-    .articlesGauche {
-        margin-bottom: 20px;
-        height: 200px;
-        margin-right: 0px;
-    }
     .gaucheConteneur > h2 {
         padding: 0;
     }
@@ -157,16 +158,18 @@
         padding-left: 0;
         margin-bottom: 30px;
     }
-    .articlesConteneur2 {
+    .articlesConteneur1 {
         display: flex;
         padding: 0;
         flex-direction: column;
     }
-    h3 a {
-        color: black;
-    }
     .articlesBase a {
         color: black;
+    }
+    .articleHebergement {
+        margin-bottom: 20px;
+        height: 200px;
+        margin-right: 0px;
     }
     .articlesImages {
         height: 60%;
@@ -190,35 +193,26 @@
         font-size: 12px;
         margin-top: 3px;
     }
-    .etoile-bleue {
+    .articlesEtoilesBleu {
         color: #0065FC;
     }
-    .etoile-gris {
+    .articlesEtoilesGris {
         color: #d1d1d1;
     }
-    .droiteConteneur {
+    .populairesConteneur {
         background-color: #F2F2F2;
         margin: 0;
         border-radius: 0;
     }
-    .lienExterneConteneur {
+    .graphiqueConteneur {
         display: flex;
         align-items: center;
         justify-content: space-between;
         margin-top: 50px;
         margin-bottom: 30px;
     }
-    .lienExterneConteneur > h2 {
+    .graphiqueConteneur > h2 {
         margin: 0;
-    }
-    .container-box a {
-        color: black;
-    }
-    .box-image-aside {
-        width: 30%;
-        height: 100%;
-        border-bottom-left-radius: 30px;
-        border-top-left-radius: 30px;
     }
     .asideImages {
         width: 100%;
@@ -241,26 +235,26 @@
         display: flex;
         align-items: flex-end;
     }
-    .activitesConteneur1 {
+    .activitesConteneur {
         margin: 0 20px;
     }
-    .activitesConteneur1 h2 {
+    .activitesConteneur h2 {
         margin-bottom: 0;
     }
-    .activitesConteneur2 {
+    .basConteneur {
         flex-direction: column;
         height: auto;
     }
     .texteConteneur {
         height: 30%;
     }
-    .activitesConteneur3 {
+    .activitesConteneur1 {
         width: 100%;
         height: 200px;
         margin: 0;
         margin: 30px 0;
     }
-    .activitesConteneur4 {
+    .activitesConteneur2 {
         height: 140px;
     }
     .ilesDuFrioul {
@@ -273,31 +267,32 @@
         height: 70%;
         border-radius: 30px 30px 0 0;
     }
-    .piedDePage {
+    .aPropos {
         background-color: #F2F2F2;
         width: 100%;
     }
-    .container-col-footer {
+    .piedDePageConteneur {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         padding: 30px 30px;
     }
-    .col-footer {
+    .titresConteneur {
         flex: 1;
     }
-    .footer-li {
+    .footerListe {
         margin: 15px 0;
     }
-    .footer-li a {
+    .footerListe a {
         color: black;
     }
-    .col-footer h3 a {
+    .titresConteneur h3 a {
         color: black;
     }
-    @media (max-width: 477px) {
+}
+
+@media (max-width: 477px) {
         .informationsConteneur2 {
             width: 34px;
         }
-    }
 }
