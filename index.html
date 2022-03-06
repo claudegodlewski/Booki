@@ -1,5 +1,6 @@
+<!-- # Informations générales # -->
 <!DOCTYPE html>
-
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,37 +15,40 @@
     <link rel="stylesheet" href="css/mobile.css">
     <title>Booki</title>
 </head>
+<!-- # Informations générales # -->
+
 
 <body>
-    <!--# En-tête #-->
-    <header class="base headerSemantique">
-        <nav class="navigation">
-                <div class="navigationLogo">
+    <!-- # En-tête # -->
+    <header class="base header">
+        <nav class="nav">
+                <div class="logo">
                     <img src="images/logo/Booki@3x.png" alt="Booki" title="Booki">
                 </div>
-            </a>
             <ul class="hebergementsActivites">
                 <li><a href="#hebergements">Hébergements</a></li><li><a href="#activites">Activités</a></li>
             </ul>
         </nav>
     </header>
-    <!--# En-tête #-->
+    <!-- # En-tête # -->
 
-    <!--# Principal #-->
-    <main class="base principal">
+
+<!-- # Principal # -->
+<main class="base main">
 
         <!-- Formulaire -->
-        <form action="#" class="formulaireRecherche">
+        <form action="#" class="form">
             <h1>Trouver votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre ville ou en pleine nature</p>
                 
                     <div class="formulaireConteneur">
                         <i class="fas fa-map-marker-alt"></i>
-                        <label for="location" class="label-input">
+                        <label for="location" class="labelInput">
                             <input type="search" id="location" name="search" placeholder="Marseille, France">
                         </label>
-                        <button value="Rechercher" type="submit" class="boutonRecherche">
-                            <span>Rechercher</span>
+                        <button value="Rechercher" type="submit" class="boutonRecherche1">
+                            <span class="boutonRecherche2">Rechercher</span>
+                            <i class="fas fa-search"></i>
                         </button>
                     </div>
 
@@ -64,14 +68,15 @@
                     </div>
         </form>
 
-        <!--Hébergement-->
-        <section id="hebergements" class="articlesConteneur1">
+        <!-- Hébergement -->
+        <section id="hebergements" class="hebergementsConteneur">
+
             <div class="gaucheConteneur">
                 <h2>Hébergements à Marseille</h2>
-                <div class="articlesConteneur2">
+                <div class="articlesConteneur1">
 
-                    <!-- Article 1-->
-                    <div class="articlesBase articlesGauche">
+                    <!-- Article 1 -->
+                    <div class="articlesBase articleHebergement">
                         <a href="#">
                             <div class="articlesImages">
                                 <img class="articlesImages" srcset="
@@ -84,137 +89,137 @@
                             <div class="articlesInformations">
                                 <h4>Auberge la Cannebière</h4>
                                 <p>Nuit à partir de <strong>25€</strong></p>
-                                <div class="box-etoiles">
-                                    <span class="etoile-bleue"><i class="fas fa-star"></i></span>
-                                    <span class="etoile-bleue"><i class="fas fa-star"></i></span>
-                                    <span class="etoile-bleue"><i class="fas fa-star"></i></span>
-                                    <span class="etoile-bleue"><i class="fas fa-star"></i></span>
-                                    <span class="etoile-gris"><i class="fas fa-star"></i></span>
+                                <div class="etoilesConteneur">
+                                    <span class="articlesEtoilesBleu"><i class="fas fa-star"></i></span>
+                                    <span class="articlesEtoilesBleu"><i class="fas fa-star"></i></span>
+                                    <span class="articlesEtoilesBleu"><i class="fas fa-star"></i></span>
+                                    <span class="articlesEtoilesBleu"><i class="fas fa-star"></i></span>
+                                    <span class="articlesEtoilesGris"><i class="fas fa-star"></i></span>
                                 </div>
                             </div>
                         </a>
                     </div>
 
                     <!-- Articles 2 -->
-                    <div class="articlesBase articlesGauche">
+                    <div class="articlesBase articleHebergement">
                         <a href="#">
                             <div class="articlesImages">
                                 <img class="articlesImages" srcset="
                                 images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg 750w,
                                 images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg 1500w,
                                 images/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg 3000w,
-                                images/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg 6000w" sizes="(max-width:767px) 100vw, (min-width: 768px) and (max-width : 992px) 50vw, (min-width: 993px) 25vw" src="images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg "
-                                    alt="fred-kleber-gTbaxaVLvsg-unsplash.jpg ">
+                                images/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg 6000w" sizes="(max-width:767px) 100vw, (min-width: 768px) and (max-width : 992px) 50vw, (min-width: 993px) 25vw" src="images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+                                    alt="fred-kleber-gTbaxaVLvsg-unsplash.jpg">
                             </div>
                             <div class="articlesInformations">
                                 <h4>Hôtel du port</h4>
                                 <p>Nuit à partir de <strong>52€</strong></p>
-                                <div class="box-etoiles">
-                                    <span class="etoile-bleue "><i class="fas fa-star"></i></span>
-                                    <span class="etoile-bleue "><i class="fas fa-star"></i></span>
-                                    <span class="etoile-bleue "><i class="fas fa-star"></i></span>
-                                    <span class="etoile-bleue "><i class="fas fa-star"></i></span>
-                                    <span class="etoile-bleue "><i class="fas fa-star"></i></span>
+                                <div class="etoilesConteneur">
+                                    <span class="articlesEtoilesBleu"><i class="fas fa-star"></i></span>
+                                    <span class="articlesEtoilesBleu"><i class="fas fa-star"></i></span>
+                                    <span class="articlesEtoilesBleu"><i class="fas fa-star"></i></span>
+                                    <span class="articlesEtoilesBleu"><i class="fas fa-star"></i></span>
+                                    <span class="articlesEtoilesBleu"><i class="fas fa-star"></i></span>
                                 </div>
                             </div>
                         </a>
                     </div>
 
                     <!-- Articles 3 -->
-                    <div class="articlesBase articlesGauche">
+                    <div class="articlesBase articleHebergement">
                         <a href="#">
                             <div class="articlesImages">
                                 <img class="articlesImages" srcset="
                                 images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg 750w,
                                 images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg 1500w,
                                 images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg 3000w,
-                                images/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg 6000w" sizes="(max-width:767px) 100vw, (min-width: 768px) and (max-width : 992px) 50vw, (min-width: 993px) 25vw" src="images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg "
-                                    alt="reisetopia-B8WIgxA_PFU-unsplash.jpgfred-kleber-gTbaxaVLvsg-unsplash.jpg ">
+                                images/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg 6000w" sizes="(max-width:767px) 100vw, (min-width: 768px) and (max-width : 992px) 50vw, (min-width: 993px) 25vw" src="images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                                    alt="reisetopia-B8WIgxA_PFU-unsplash.jpgfred-kleber-gTbaxaVLvsg-unsplash.jpg">
                             </div>
                             <div class="articlesInformations">
                                 <h4>Hôtel les mouettes</h4>
                                 <p>Nuit à partir de <strong>76€</strong></p>
-                                <div class="box-etoiles ">
-                                    <span class="etoile-bleue "><i class="fas fa-star"></i></span>
-                                    <span class="etoile-bleue "><i class="fas fa-star"></i></span>
-                                    <span class="etoile-bleue "><i class="fas fa-star"></i></span>
-                                    <span class="etoile-bleue "><i class="fas fa-star"></i></span>
-                                    <span class="etoile-gris "><i class="fas fa-star"></i></span>
+                                <div class="etoilesConteneur">
+                                    <span class="articlesEtoilesBleu"><i class="fas fa-star"></i></span>
+                                    <span class="articlesEtoilesBleu"><i class="fas fa-star"></i></span>
+                                    <span class="articlesEtoilesBleu"><i class="fas fa-star"></i></span>
+                                    <span class="articlesEtoilesBleu"><i class="fas fa-star"></i></span>
+                                    <span class="articlesEtoilesGris"><i class="fas fa-star"></i></span>
                                 </div>
                             </div>
                         </a>
                     </div>
 
                     <!-- Articles 4 -->
-                    <div class="articlesBase articlesGauche">
+                    <div class="articlesBase articleHebergement">
                         <a href="#">
                             <div class="articlesImages">
                                 <img class="articlesImages" srcset="
                                 images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg 750w,
                                 images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg 1500w,
                                 images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg 3000w,
-                                images/hebergements/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg 6000w" sizes="(max-width:767px) 100vw, (min-width: 768px) and (max-width : 992px) 50vw, (min-width: 993px) 25vw" src="images/hebergements//3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg "
-                                    alt="annie-spratt-Eg1qcIitAuA-unsplash.jpg ">
+                                images/hebergements/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg 6000w" sizes="(max-width:767px) 100vw, (min-width: 768px) and (max-width : 992px) 50vw, (min-width: 993px) 25vw" src="images/hebergements//3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                                    alt="annie-spratt-Eg1qcIitAuA-unsplash.jpg">
                             </div>
                             <div class="articlesInformations">
                                 <h4>Hôtel de la mer</h4>
                                 <p>Nuit à partir de <strong>46€</strong></p>
-                                <div class="box-etoiles ">
-                                    <span class="etoile-bleue "><i class="fas fa-star"></i></span>
-                                    <span class="etoile-bleue "><i class="fas fa-star"></i></span>
-                                    <span class="etoile-bleue "><i class="fas fa-star"></i></span>
-                                    <span class="etoile-gris "><i class="fas fa-star"></i></span>
-                                    <span class="etoile-gris "><i class="fas fa-star"></i></span>
+                                <div class="etoilesConteneur">
+                                    <span class="articlesEtoilesBleu"><i class="fas fa-star"></i></span>
+                                    <span class="articlesEtoilesBleu"><i class="fas fa-star"></i></span>
+                                    <span class="articlesEtoilesBleu"><i class="fas fa-star"></i></span>
+                                    <span class="articlesEtoilesGris"><i class="fas fa-star"></i></span>
+                                    <span class="articlesEtoilesGris"><i class="fas fa-star"></i></span>
                                 </div>
                             </div>
                         </a>
                     </div>
 
                     <!-- Articles 5 -->
-                    <div class="articlesBase articlesGauche">
+                    <div class="articlesBase articleHebergement">
                         <a href="#">
                             <div class="articlesImages">
                                 <img class="articlesImages" srcset="
                                 images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg 750w,
                                 images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg 1500w,
                                 images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg 3000w,
-                                images/hebergements/1_xlarge/nicate-lee-kT-ZyaiwBe0-unsplash.jpg 6000w" sizes="(max-width:767px) 100vw, (min-width: 768px) and (max-width : 992px) 50vw, (min-width: 993px) 25vw" src="images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg "
-                                    alt="nicate-lee-kT-ZyaiwBe0-unsplash.jpg ">
+                                images/hebergements/1_xlarge/nicate-lee-kT-ZyaiwBe0-unsplash.jpg 6000w" sizes="(max-width:767px) 100vw, (min-width: 768px) and (max-width : 992px) 50vw, (min-width: 993px) 25vw" src="images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
+                                    alt="nicate-lee-kT-ZyaiwBe0-unsplash.jpg">
                             </div>
                             <div class="articlesInformations">
                                 <h4>Auberge le panier</h4>
                                 <p>Nuit à partir de <strong>23€</strong></p>
-                                <div class="box-etoiles ">
-                                    <span class="etoile-bleue "><i class="fas fa-star"></i></span>
-                                    <span class="etoile-bleue "><i class="fas fa-star"></i></span>
-                                    <span class="etoile-bleue "><i class="fas fa-star"></i></span>
-                                    <span class="etoile-bleue "><i class="fas fa-star"></i></span>
-                                    <span class="etoile-gris "><i class="fas fa-star"></i></span>
+                                <div class="etoilesConteneur">
+                                    <span class="articlesEtoilesBleu"><i class="fas fa-star"></i></span>
+                                    <span class="articlesEtoilesBleu"><i class="fas fa-star"></i></span>
+                                    <span class="articlesEtoilesBleu"><i class="fas fa-star"></i></span>
+                                    <span class="articlesEtoilesBleu"><i class="fas fa-star"></i></span>
+                                    <span class="articlesEtoilesGris"><i class="fas fa-star"></i></span>
                                 </div>
                             </div>
                         </a>
                     </div>
 
                     <!-- Articles 6 -->
-                    <div class="articlesBase articlesGauche">
+                    <div class="articlesBase articleHebergement">
                         <a href="#">
                             <div class="articlesImages">
                                 <img class="articlesImages" srcset="
                                 images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg 750w,
                                 images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg 1500w,
                                 images/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg 3000w,
-                                images/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg 6000w" sizes="(max-width:767px) 100vw, (min-width: 768px) and (max-width : 992px) 50vw, (min-width: 993px) 25vw" src="images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg "
-                                    alt="febrian-zakaria-M6S1WvfW68A-unsplash.jpg ">
+                                images/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg 6000w" sizes="(max-width:767px) 100vw, (min-width: 768px) and (max-width : 992px) 50vw, (min-width: 993px) 25vw" src="images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
+                                    alt="febrian-zakaria-M6S1WvfW68A-unsplash.jpg">
                             </div>
                             <div class="articlesInformations">
                                 <h4>Hôtel chez Amina</h4>
                                 <p>Nuit à partir de <strong>96€</strong></p>
-                                <div class="box-etoiles">
-                                    <span class="etoile-bleue "><i class="fas fa-star"></i></span>
-                                    <span class="etoile-bleue "><i class="fas fa-star"></i></span>
-                                    <span class="etoile-bleue "><i class="fas fa-star"></i></span>
-                                    <span class="etoile-bleue "><i class="fas fa-star"></i></span>
-                                    <span class="etoile-gris "><i class="fas fa-star"></i></span>
+                                <div class="etoilesConteneur">
+                                    <span class="articlesEtoilesBleu"><i class="fas fa-star"></i></span>
+                                    <span class="articlesEtoilesBleu"><i class="fas fa-star"></i></span>
+                                    <span class="articlesEtoilesBleu"><i class="fas fa-star"></i></span>
+                                    <span class="articlesEtoilesBleu"><i class="fas fa-star"></i></span>
+                                    <span class="articlesEtoilesGris"><i class="fas fa-star"></i></span>
                                 </div>
                             </div>
                         </a>
@@ -225,36 +230,37 @@
             </div>
 
             <!-- Populaires -->
-            <aside class="droiteConteneur">
-                <div class="lienExterneConteneur">
+            <aside class="populairesConteneur">
+
+                <div class="graphiqueConteneur">
                     <h2>Les plus populaires</h2>
                     <a href="#"><span><i class="fas fa-chart-line"></i></span></a>
                 </div>
 
-                <div class="populaireConteneur">
+                <div class="droiteConteneur">
 
                     <!-- Article 1 -->
-                    <div class="articlesBase asideConteneur1">
+                    <div class="articlesBase ">
                         <a href="#">
-                            <div class="asideConteneur2">
+                            <div class="asideConteneur">
                                 <div class="articlesImages">
                                     <img class="asideImages" srcset="
                                 images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg 750w,
                                 images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg 1500w,
                                 images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg 3000w,
                                 images/hebergements/1_xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg 6000w" sizes="(max-width:767px) 33.33vw, (min-width: 768px) and (max-width : 992px) 33.33vw, (min-width: 993px) 33.33vw" src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
-                                        alt="emile-guillemot-Bj_rcSC5XfE-unsplash.jpg ">
+                                        alt="emile-guillemot-Bj_rcSC5XfE-unsplash.jpg">
                                 </div>
                                 <div class="articlesInformations">
                                     <h4>Hôtel Le soleil du matin</h4>
                                     <p>Nuit à partir de <strong>128€</strong>
                                     </p>
-                                    <div class="box-etoiles box-etoiles-aside">
-                                        <span class="etoile-bleue "><i class="fas fa-star"></i></span>
-                                        <span class="etoile-bleue "><i class="fas fa-star"></i></span>
-                                        <span class="etoile-bleue "><i class="fas fa-star"></i></span>
-                                        <span class="etoile-bleue "><i class="fas fa-star"></i></span>
-                                        <span class="etoile-gris "><i class="fas fa-star"></i></span>
+                                    <div class="etoilesConteneur box-etoiles-aside">
+                                        <span class="articlesEtoilesBleu"><i class="fas fa-star"></i></span>
+                                        <span class="articlesEtoilesBleu"><i class="fas fa-star"></i></span>
+                                        <span class="articlesEtoilesBleu"><i class="fas fa-star"></i></span>
+                                        <span class="articlesEtoilesBleu"><i class="fas fa-star"></i></span>
+                                        <span class="articlesEtoilesGris"><i class="fas fa-star"></i></span>
                                     </div>
                                 </div>
                             </div>
@@ -262,26 +268,26 @@
                     </div>
 
                     <!-- Article 2 -->
-                    <div class="articlesBase asideConteneur1">
+                    <div class="articlesBase articlePopulaire">
                         <a href="#">
-                            <div class="asideConteneur2">
+                            <div class="asideConteneur">
                                 <div class="articlesImages">
                                     <img class="asideImages" srcset="
                                 images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg 750w,
                                 images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg 1500w,
                                 images/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg 3000w,
                                 images/hebergements/1_xlarge/aw-creative-VGs8z60yT2c-unsplash.jpg 6000w" sizes="(max-width:767px) 33.33vw, (min-width: 768px) and (max-width : 992px) 33.33vw, (min-width: 993px) 33.33vw" src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
-                                        alt="aw-creative-VGs8z60yT2c-unsplash.jpg ">
+                                        alt="aw-creative-VGs8z60yT2c-unsplash.jpg">
                                 </div>
                                 <div class="articlesInformations">
-                                    <h4>Au coeur de l'eau Chambre d'hôtes</h4>
+                                    <h4>Au coeur de l'eau Chambres d'hôtes</h4>
                                     <p>Nuit à partir de <strong>71€</strong></p>
-                                    <div class="box-etoiles box-etoiles-aside">
-                                        <span class="etoile-bleue "><i class="fas fa-star"></i></span>
-                                        <span class="etoile-bleue "><i class="fas fa-star"></i></span>
-                                        <span class="etoile-bleue "><i class="fas fa-star"></i></span>
-                                        <span class="etoile-bleue "><i class="fas fa-star"></i></span>
-                                        <span class="etoile-gris "><i class="fas fa-star"></i></span>
+                                    <div class="etoilesConteneur box-etoiles-aside">
+                                        <span class="articlesEtoilesBleu"><i class="fas fa-star"></i></span>
+                                        <span class="articlesEtoilesBleu"><i class="fas fa-star"></i></span>
+                                        <span class="articlesEtoilesBleu"><i class="fas fa-star"></i></span>
+                                        <span class="articlesEtoilesBleu"><i class="fas fa-star"></i></span>
+                                        <span class="articlesEtoilesGris"><i class="fas fa-star"></i></span>
                                     </div>
                                 </div>
                             </div>
@@ -289,187 +295,189 @@
                     </div>
 
                     <!-- Article 3 -->
-                    <div class="articlesBase asideConteneur1">
+                    <div class="articlesBase articlePopulaire">
                         <a href="#">
-                            <div class="asideConteneur2">
+                            <div class="asideConteneur">
                                 <div class="articlesImages">
                                     <img class="asideImages" srcset="
                                 images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg 750w,
                                 images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg 1500w,
                                 images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg 3000w,
                                 images/hebergements/1_xlarge/febrian-zakaria-sjvU0THccQA-unsplash.jpg 6000w" sizes="(max-width:767px) 33.33vw, (min-width: 768px) and (max-width : 992px) 25vw, (min-width: 993px) 33.33vw" src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
-                                        alt="febrian-zakaria-sjvU0THccQA-unsplash.jpg ">
+                                        alt="febrian-zakaria-sjvU0THccQA-unsplash.jpg">
                                 </div>
                                 <div class="articlesInformations">
                                     <h4>Hôtel Tout bleu et blanc</h4>
                                     <p>Nuit à partir de <strong>68€</strong>
                                     </p>
-                                    <div class="box-etoiles box-etoiles-aside">
-                                        <span class="etoile-bleue "><i class="fas fa-star"></i></span>
-                                        <span class="etoile-bleue "><i class="fas fa-star"></i></span>
-                                        <span class="etoile-bleue "><i class="fas fa-star"></i></span>
-                                        <span class="etoile-bleue "><i class="fas fa-star"></i></span>
-                                        <span class="etoile-gris "><i class="fas fa-star"></i></span>
+                                    <div class="etoilesConteneur box-etoiles-aside">
+                                        <span class="articlesEtoilesBleu"><i class="fas fa-star"></i></span>
+                                        <span class="articlesEtoilesBleu"><i class="fas fa-star"></i></span>
+                                        <span class="articlesEtoilesBleu"><i class="fas fa-star"></i></span>
+                                        <span class="articlesEtoilesBleu"><i class="fas fa-star"></i></span>
+                                        <span class="articlesEtoilesGris"><i class="fas fa-star"></i></span>
                                     </div>
                                 </div>
                             </div>
                         </a>
                     </div>
                 </div>
-            </aside>
-            <!-- Populaires -->
 
+            </aside>
+            
         </section>
-        <!-- Hébergements -->
 
         <!-- Activités -->
-        <section id="activites" class="activitesConteneur1">
-            <h2>Activités à Marseille</h2>
-            <div class="activitesConteneur2">
+    <section id="activites" class="activitesConteneur">
 
-                <!-- 1 -->
-                <div class="articlesBase activitesConteneur3 vieuxPort">
+        <h2>Activités à Marseille</h2>
+
+        <div class="basConteneur">
+
+            <!-- Vieux port -->
+            <div class="articlesBase activitesConteneur1 vieuxPort">
+                <a href="#">
+                    <div class="imagesVerticalesConteneur">
+                        <img class="articlesImages" srcset="
+                            images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg 750w,
+                            images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg 1500w,
+                            images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg 3000w,
+                            images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg 6000w" sizes="(max-width:767px) 100vw, (min-width: 768px) and (max-width : 992px) 25vw, (min-width: 993px) 25vw" src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+                            alt="reno-laithienne-QUgJhdY5Fyk-unsplash.jpg">
+                    </div>
+                    <div class="texteConteneur">
+                        <h4>Vieux port</h4>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Fort de Pomègues et Îles du Frioul -->
+            <div class="activitesDoubleElementsConteneur">
+                
+                <div class="articlesBase fortDePomegues">
                     <a href="#">
-                        <div class="imagesVerticalesConteneur">
+                        <div class="activitesConteneur2">
                             <img class="articlesImages" srcset="
-                                images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg 750w,
-                                images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg 1500w,
-                                images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg 3000w,
-                                images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg 6000w" sizes="(max-width:767px) 100vw, (min-width: 768px) and (max-width : 992px) 25vw, (min-width: 993px) 25vw" src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
-                                alt="reno-laithienne-QUgJhdY5Fyk-unsplash.jpg">
-                        </div>
-                        <div class="texteConteneur">
-                            <h4>Vieux port</h4>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="activitesDoubleElementsConteneur">
-
-                    <!-- 2 -->
-                    <div class="articlesBase fortDePomegues">
-                        <a href="#">
-                            <div class="activitesConteneur4">
-                                <img class="articlesImages" srcset="
                                 images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg 750w,
                                 images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg 1500w,
                                 images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg 3000w,
                                 images/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg 6000w" sizes="(max-width:767px) 100vw, (min-width: 768px) and (max-width : 992px) 25vw, (min-width: 993px) 25vw" src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
                                     alt="paul-hermann-QFTrLdQIRhI-unsplash.jpg">
-                            </div>
-                            <div class="texteConteneur2">
-                                <h4>Fort de Pomègues</h4>
-                            </div>
-                        </a>
-                    </div>
+                        </div>
+                        <div class="texteConteneur2">
+                            <h4>Fort de Pomègues</h4>
+                        </div>
+                    </a>
+                </div>
 
-                    <!-- 3 -->
-                    <div class="articlesBase ilesDuFrioul">
-                        <a href="#">
-                            <div class="activitesConteneur4">
-                                <img class="articlesImages" srcset="
+                <div class="articlesBase ilesDuFrioul">
+                    <a href="#">
+                        <div class="activitesConteneur2">
+                            <img class="articlesImages" srcset="
                                 images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg 750w,
                                 images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg 1500w,
                                 images/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg 3000w,
                                 images/activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg 6000w" sizes="(max-width:767px) 100vw, (min-width: 768px) and (max-width : 992px) 25vw, (min-width: 993px) 25vw" src="images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
                                     alt="kevin-hikari-rV_Qd1l-VXg-unsplash.jpg">
-                            </div>
-                            <div class="texteConteneur2">
-                                <h4>Îles du Frioul</h4>
-                            </div>
-                        </a>
-                    </div>
-
-                </div>
-
-                <!-- 4 -->
-                <div class="articlesBase activitesConteneur3 parcNationalDesCalanques">
-                    <a href="#">
-                        <div class="imagesVerticalesConteneur">
-                            <img class="articlesImages" srcset="
-                                images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg 750w,
-                                images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg 1500w,
-                                images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg 3000w,
-                                images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg 6000w" sizes="(max-width:767px) 100vw, (min-width: 768px) and (max-width : 992px) 25vw, (min-width: 993px) 25vw" src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
-                                alt="kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg">
-
                         </div>
-                        <div class="texteConteneur">
-                            <h4>Parc National des Calanques</h4>
+                        <div class="texteConteneur2">
+                            <h4>Îles du Frioul</h4>
                         </div>
                     </a>
                 </div>
 
-                <div class="activitesDoubleElementsConteneur">
+            </div>
 
-                    <!-- 5 -->
-                    <div class="articlesBase notreDameDeLaGarde">
-                        <a href="#">
-                            <div class="activitesConteneur4">
-                                <img class="articlesImages" srcset="
-                                images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg 750w,
-                                images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg 1500w,
-                                images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg 3000w,
-                                images/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg 6000w" sizes="(max-width:767px) 100vw, (min-width: 768px) and (max-width : 992px) 25vw, (min-width: 993px) 25vw" src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg"
-                                    alt="florian-wehde-xW9e8gdotxI-unsplash.jpg ">
-                            </div>
-                            <div class="texteConteneur2">
-                                <h4>Notre-Dame de la Garde</h4>
-                            </div>
-                        </a>
+            <!-- Parc National des Calanques -->
+            <div class="articlesBase activitesConteneur1 parcNationalDesCalanques">
+                <a href="#">
+                    <div class="imagesVerticalesConteneur">
+                        <img class="articlesImages" srcset="
+                            images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg 750w,
+                            images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg 1500w,
+                            images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg 3000w,
+                            images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg 6000w" sizes="(max-width:767px) 100vw, (min-width: 768px) and (max-width : 992px) 25vw, (min-width: 993px) 25vw" src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+                            alt="kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg">
+
                     </div>
-
-                    <!-- 6 -->
-                    <div class="articlesBase parcLongChamp">
-                        <a href="#">
-                            <div class="activitesConteneur4">
-                                <img class="articlesImages box-image-1" srcset="
-                                images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg 750w,
-                                images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg 1500w,
-                                images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg 3000w,
-                                images/activites/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash.jpg 6000w" sizes="(max-width:767px) 100vw, (min-width: 768px) and (max-width : 992px) 25vw, (min-width: 993px) 25vw" src="images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
-                                    alt="lena-paulin-wH2-EJoDcV0-unsplash.jpg ">
-                            </div>
-                            <div class="texteConteneur2">
-                                <h4>Parc Longchamp</h4>
-                            </div>
-                        </a>
+                    <div class="texteConteneur">
+                        <h4>Parc National des Calanques</h4>
                     </div>
+                </a>
+            </div>
 
+            <!-- Notre-Dame de la Garde et Parc Longchamp -->
+            <div class="activitesDoubleElementsConteneur">
+
+                <div class="articlesBase notreDameDeLaGarde">
+                    <a href="#">
+                        <div class="activitesConteneur2">
+                            <img class="articlesImages" srcset="
+                            images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg 750w,
+                            images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg 1500w,
+                            images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg 3000w,
+                            images/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg 6000w" sizes="(max-width:767px) 100vw, (min-width: 768px) and (max-width : 992px) 25vw, (min-width: 993px) 25vw" src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                                alt="florian-wehde-xW9e8gdotxI-unsplash.jpg">
+                        </div>
+                        <div class="texteConteneur2">
+                            <h4>Notre-Dame de la Garde</h4>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="articlesBase parcLongChamp">
+                    <a href="#">
+                        <div class="activitesConteneur2">
+                            <img class="articlesImages" srcset="
+                            images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg 750w,
+                            images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg 1500w,
+                            images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg 3000w,
+                            images/activites/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash.jpg 6000w" sizes="(max-width:767px) 100vw, (min-width: 768px) and (max-width : 992px) 25vw, (min-width: 993px) 25vw" src="images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+                                alt="lena-paulin-wH2-EJoDcV0-unsplash.jpg">
+                        </div>
+                        <div class="texteConteneur2">
+                            <h4>Parc Longchamp</h4>
+                        </div>
+                    </a>
                 </div>
 
             </div>
-        </section>
 
-    </main>
+        </div>
 
-    <!--Footer-->
-    <footer class="piedDePage">
-        <div class="container-col-footer">
-            <div class="col-footer ">
+    </section>
+
+</main>
+<!-- # Principal # -->
+
+    <!-- # Pied de page # -->
+    <footer class="aPropos">
+        <div class="piedDePageConteneur">
+            <div class="titresConteneur">
                 <h3><a href="#">A propos</a></h3>
-                <ul class="footer-ul ">
-                    <li class="footer-li "><a href="#">Fonctionnement du site</a></li>
-                    <li class="footer-li "><a href="#">Conditions générales de vente</a></li>
-                    <li class="footer-li "><a href="#">Données et confidentialité</a></li>
+                <ul>
+                    <li class="footerListe"><a href="#">Fonctionnement du site</a></li>
+                    <li class="footerListe"><a href="#">Conditions générales de vente</a></li>
+                    <li class="footerListe"><a href="#">Données et confidentialité</a></li>
                 </ul>
             </div>
-            <div class="col-footer ">
+            <div class="titresConteneur">
                 <h3><a href="#">Nos hébergements</a></h3>
-                <ul class="footer-ul ">
-                    <li class="footer-li "><a href="#">Charte et qualité</a></li>
-                    <li class="footer-li "><a href="#">Soumettre votre hôtel</a></li>
+                <ul>
+                    <li class="footerListe"><a href="#">Charte et qualité</a></li>
+                    <li class="footerListe"><a href="#">Soumettre votre hôtel</a></li>
                 </ul>
             </div>
-            <div class="col-footer ">
+            <div class="titresConteneur">
                 <h3><a href="#">Assistance</a></h3>
-                <ul class="footer-ul ">
-                    <li class="footer-li "><a href="#">Centre d'aide</a></li>
-                    <li class="footer-li "><a href="#">Nous contacter</a></li>
+                <ul>
+                    <li class="footerListe"><a href="#">Centre d'aide</a></li>
+                    <li class="footerListe"><a href="#">Nous contacter</a></li>
                 </ul>
             </div>
         </div>
     </footer>
-</body>
+    <!-- # Pied de page # -->
 
+</body>
 </html>
