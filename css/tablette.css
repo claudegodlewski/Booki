@@ -43,7 +43,8 @@ ul, a {
         ;
     }
     .main {
-        margin: 0px 10px;
+        margin-left: auto;
+        margin-right: auto;
     }
     .form h1 {
         font-weight: bold;
@@ -145,7 +146,7 @@ ul, a {
         margin-top: 20px;
         background-color: #F2F2F2;
         padding: 0 20px;
-        border-radius: 30px;
+        border-radius: 25px;
     }
     .asideConteneur {
         display: flex;
