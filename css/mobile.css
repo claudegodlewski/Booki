@@ -202,7 +202,7 @@
     .populairesConteneur {
         background-color: #F2F2F2;
         margin: 0;
-        border-radius: 0;
+        border-radius: 25px;
     }
     .graphiqueConteneur {
         display: flex;
